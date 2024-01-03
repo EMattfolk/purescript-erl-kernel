@@ -83,7 +83,4 @@ currentTimeOffset_(Ctor) ->
     Ctor(erlang:time_offset())
   end.
 
-nativeTimeToMilliseconds_(Time) ->
-  erlang:convert_time_unit(Time, native, millisecond).
-
 node() -> fun() -> erlang:node() end.
